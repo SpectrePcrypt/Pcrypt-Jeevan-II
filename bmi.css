@@ -1,0 +1,367 @@
+/*global*/
+*{
+	font-family: 'Ubuntu' , sans-serif;
+}
+
+body{
+	margin: 0px;
+	background-color: #ceffec;
+}
+
+
+/*navigation panel*/
+
+
+
+
+
+
+/*carousel from here*/
+#showcase{
+	background: url(./imgNew/back.jpg) no-repeat 0 -550px;
+	vertical-align: middle;
+	/* min-height:150px; */
+}
+
+.carou{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+
+.carousel-container{
+	width:60%;
+	margin: auto;
+	overflow: hidden;
+	/* border-right: 2px solid white;
+	border-left: 2px solid white; */
+	position: relative;
+	max-width: 700px;
+}
+
+.carousel-slide{
+	display: flex;
+	width: 100%;
+	min-height: 200px;
+	align-items: center;
+}
+
+.carou img{
+	border-radius: 5px;
+	width:100%;
+	min-height: 200px;
+	border-right: 2px solid white;
+	border-left: 2px solid white;
+	align-self: center;
+}
+
+#prevBtn{
+	position:absolute;
+	top: 45%;
+	z-index:10;
+	left:5%;
+	/* size: 30 px; */
+	color: #ffffff;
+	opacity:0.8;
+	cursor: pointer;
+}
+
+#nextBtn{
+	position:absolute;
+	top: 45%;
+	z-index:10;
+	right: 5%;
+	/* font-size: 30 px; */
+	color: #ffffff;
+	opacity:0.8;
+	cursor: pointer;
+}
+
+@media screen and (max-width:700px){
+	#showcase div i{
+		font-size: 100%;
+	}
+}
+
+
+/*body*/
+#taglinebox{
+	margin:0;
+	background-color: #08e27c;
+	border-bottom: 1px solid rgba(51, 108, 65, 0.96);
+}
+#tagline{
+	color:rgb(4, 85, 44);
+	font-size: 30px;
+	margin-top:0;
+	margin-bottom: 0;
+	/* position: relative;
+	left: 36%; */
+	font-weight: bolder;
+	z-index: 10;
+}
+
+h1 {
+	text-align:center ;
+	margin-top:50px;
+}
+#aboutbmi{
+	font-size: 20px;
+	text-align:left;
+	margin:50px;
+	margin-bottom:10px;
+}
+
+div.conta{
+	width:100%;
+	
+	text-align:center;
+}
+#result{
+	font-size: 40px;
+}
+#result2{
+	font-size: 20px;
+	
+	text-align:center;
+	margin: 30px;
+}
+#hw{
+	font-size: 30px;
+}
+#height{
+	height:30px
+}
+#weight{
+	height:30px
+}
+#bmi{
+	font-size: 30px;
+}
+ul{
+	text-align:left;
+	margin-left:20px;
+	font-size: 20px;
+	margin-top:0px;
+}
+.but{
+	font-size: 30px;
+}
+button{
+	color:white;
+	background-color: #4CAF50;
+	font-size: 30px;
+	margin-top: 30px;
+}
+.heading{
+	color:#4CAF50;
+}
+
+
+
+
+/*footer from here*/
+@media (max-height:800px){
+	footer { position: relative; }
+	header { padding-top:40px; }
+}
+
+.clearfix{
+	clear: both;
+
+}
+
+footer{
+	bottom: 0;
+	border-top: 3px solid rgba(51, 108, 65, 0.96);
+}
+
+
+.footer-distributed{
+	background-color: #4CAF50;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 200px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  purple;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:    #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: bold;
+	font-size:17px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #33383b;
+	text-decoration: none;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #33383b;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#service_barf{
+	display: block;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+/* css for login php files */
+#php{
+background: url(./imgNew/phpimg.jpg) no-repeat 0 -250px;
+}
+
+.modify,.modify1{
+color:white;
+font-weight: bold;
+}
+

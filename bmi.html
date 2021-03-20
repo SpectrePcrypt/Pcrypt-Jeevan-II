@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content= "ie=edge">
+    <title>Jeevan | BMI</title>
+    <!-- main css -->
+    <link rel ="stylesheet" href = "homepage.css">
+    <link rel ="stylesheet" href = "bmi.css">
+    <link rel ="stylesheet" href = "./navBar.css">
+
+
+    <!-- google font css -->
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- The navigation panel -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom " >
+  <a class="navbar-brand" href="#">
+    <div id="logo">
+        <img src="./imgNew/logo1.png" alt="Not found">
+    </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="./homepage.html" >Home </a>
+      <a class="nav-item nav-link " href="./pharmacy.html">Pharmacy <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="./bmi.html">BMI Calculator</a>
+      <a class="nav-item nav-link" href="./AboutJeevan.html">About&nbspJeevan</a>
+      <!-- <a class="nav-item nav-link" href="./ContactUs.html">Contact&Us</a> -->
+      
+      
+      <a href = "./logout.php" class="nav-item nav-link logout" > &nbsp&nbsp&nbspLOGOUT <i class="fa fa-sign-out"></i></a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class="conta">
+
+<h1 id="heading">CALCULATE YOUR BODY MASS INDEX</h1>
+
+
+<p id="aboutbmi">  The BMI is a convenient rule of thumb used to broadly categorize a person as underweight, 
+normal weight, overweight, or obese based on tissue mass (muscle, fat, and bone) and height.One study found that BMI had a good general correlation with body fat percentage, and noted that obesity has overtaken smoking as the world's number one cause of death.<br> 
+Commonly accepted BMI ranges are 
+<ul><li>underweight (under 18.5 kg/m2)<li> normal weight (18.5 to 25)<li> 
+overweight (25 to 30) <li> obese (over 30).</ul> </p>
+
+<p id ="hw">Enter your height(in meter): <input type="text" id="height" ><br><br>
+Enter your weight (in kg) :&nbsp&nbsp &nbsp&nbsp<input type="text" id="weight" ></p>
+
+<p class="but">
+
+<button onclick="myFunction()">Click here to know your BMI</button>
+</p>
+
+<p id="bmi"></p>
+<p id="result"></p>
+<p id="result2"></p>
+<script >
+function myFunction() {
+  var y = document.getElementById("height").value;
+  var x = document.getElementById("weight").value;
+  y*=y ;
+   if (y==="" || x===""){
+   document.getElementById("result").innerHTML = "Plz enter valid height and weight";}
+   else{
+  function round(value, decimals) {
+ return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}   }
+var z = round((x/ y),2);
+  document.getElementById("bmi").innerHTML ="Your BMI is &nbsp"+ z+"&nbsp kg/m2";
+  
+if (z < 15) {
+  document.getElementById("result").innerHTML = "You are Very severely underweight";
+  document.getElementById("result2").innerHTML = "You are advised to eat small nutritious meals at least six times a day. Your diet should include whole grain bread, cereal, fruits and vegetables, dairy products, nuts and seeds, cheese, scrambled eggs, fish and chicken. Avoid eating junk. Junk food is not just responsible for making people fat. It could also be responsible for not letting your weight to increase. If you feel hungry in between meals, try to have yogurt, granola bars, dry fruits, peanut butter etc. have at least 6-8 glasses of water every day. It hydrates your skin and helps your body to flush out the junk. Only eating healthy may not help if you are not indulging in physical activities. Exercise will increase your appetite. Strength training will help you gain muscle weight. You should quit smoking as well as consumption of alcohol and drugs.";
+}
+if (z >= 15 && z<16) {
+  document.getElementById("result").innerHTML = "You are Severely underweight";
+  document.getElementById("result2").innerHTML = "You are advised to eat small nutritious meals at least six times a day. Your diet should include whole grain bread, cereal, fruits and vegetables, dairy products, nuts and seeds, cheese, scrambled eggs, fish and chicken. Avoid eating junk. Junk food is not just responsible for making people fat. It could also be responsible for not letting your weight to increase. If you feel hungry in between meals, try to have yogurt, granola bars, dry fruits, peanut butter etc. have at least 6-8 glasses of water every day. It hydrates your skin and helps your body to flush out the junk. Only eating healthy may not help if you are not indulging in physical activities. Exercise will increase your appetite. Strength training will help you gain muscle weight. You should quit smoking as well as consumption of alcohol and drugs.";
+}
+
+if (z >= 16 && z<18.5) {
+  document.getElementById("result").innerHTML = "You are Underweight";
+  document.getElementById("result2").innerHTML = "You are advised to eat small nutritious meals at least six times a day. Your diet should include whole grain bread, cereal, fruits and vegetables, dairy products, nuts and seeds, cheese, scrambled eggs, fish and chicken. Avoid eating junk. Junk food is not just responsible for making people fat. It could also be responsible for not letting your weight to increase. If you feel hungry in between meals, try to have yogurt, granola bars, dry fruits, peanut butter etc. have at least 6-8 glasses of water every day. It hydrates your skin and helps your body to flush out the junk. Only eating healthy may not help if you are not indulging in physical activities. Exercise will increase your appetite. Strength training will help you gain muscle weight. You should quit smoking as well as consumption of alcohol and drugs.";
+}
+
+if (z >= 18.5 && z<25) {
+  document.getElementById("result").innerHTML = "You are Normal";
+  document.getElementById("result2").innerHTML = "";
+}
+if (z >= 25 && z<30) {
+  document.getElementById("result").innerHTML = "You are Overweight";
+  document.getElementById("result2").innerHTML = "Common treatments for overweight and obesity include losing weight through healthy eating, being more physically active, and making other changes to your usual habits. Weight-management programs may help some people lose weight or keep from regaining lost weight. Some people who have obesity are unable to lose enough weight to improve their health or are unable to keep from regaining weight. In such cases, a doctor may consider adding other treatments, including weight-loss medicines, weight-loss devices, or bariatric surgery.";
+}
+if (z >= 30 && z<35) {
+  document.getElementById("result").innerHTML = "You are moderately Obese";
+  document.getElementById("result2").innerHTML = "Common treatments for overweight and obesity include losing weight through healthy eating, being more physically active, and making other changes to your usual habits. Weight-management programs may help some people lose weight or keep from regaining lost weight. Some people who have obesity are unable to lose enough weight to improve their health or are unable to keep from regaining weight. In such cases, a doctor may consider adding other treatments, including weight-loss medicines, weight-loss devices, or bariatric surgery.";
+}
+if (z >= 35 && z<40) {
+  document.getElementById("result").innerHTML = "You are Severely Obese";
+  document.getElementById("result2").innerHTML = "Common treatments for overweight and obesity include losing weight through healthy eating, being more physically active, and making other changes to your usual habits. Weight-management programs may help some people lose weight or keep from regaining lost weight. Some people who have obesity are unable to lose enough weight to improve their health or are unable to keep from regaining weight. In such cases, a doctor may consider adding other treatments, including weight-loss medicines, weight-loss devices, or bariatric surgery.";
+}
+if (z > 40) {
+  document.getElementById("result").innerHTML = "You are Very severely Obese";
+  document.getElementById("result2").innerHTML = "Common treatments for overweight and obesity include losing weight through healthy eating, being more physically active, and making other changes to your usual habits. Weight-management programs may help some people lose weight or keep from regaining lost weight. Some people who have obesity are unable to lose enough weight to improve their health or are unable to keep from regaining weight. In such cases, a doctor may consider adding other treatments, including weight-loss medicines, weight-loss devices, or bariatric surgery.";
+}
+
+ }
+
+</script>
+
+</div>
+
+
+
+  <footer class="footer-distributed">
+
+      <div class="footer-left">
+        <img src="./imgOld/logo.png">
+        <h3>About<span>jeevan</span></h3>
+
+        <p class="footer-links">
+            <a href = "./homepage.html">Home</a>
+            |
+            <a href="#">Health Blog</a>
+            |
+            <a href = "./AboutJeevan.html">About</a>
+            |
+            <a href = "./ContactUs.html">Contact</a>
+        </p>
+
+        <p class="footer-company-name">© 2021 Jeevan Pvt. Ltd.</p>
+      </div>
+
+      <div class="footer-center">
+          <div>
+              <i class="fas fa-map-marker-alt"></i>
+                <p><span>Indian institute of Technology</span>
+               Roorkee - 400710</p>
+          </div>
+
+          <div>
+              <i class="fas fa-phone"></i>
+              <p>+91 9400000085</p>
+          </div>
+          <div>
+              <i class="fas fa-envelope"></i>
+              <p><a href="mailto:iitrhackathon@gmail.com">iitrhackathon@gmail.com</a></p>
+          </div>
+      </div>
+
+      <div class="footer-right">
+          <p class="footer-company-about">
+              <span>About the Service</span>
+              <span id="service_barf">Tired of long waiting at doctors' place? Use&nbspour&nbspservices&nbsp: </span>
+              </p>
+          <div class="footer-icons">
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </footer>
+</div>
+
+
+
+
+</body>
+</html>

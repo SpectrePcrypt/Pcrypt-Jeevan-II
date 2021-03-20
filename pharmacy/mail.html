@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content= "ie=edge">
+    <title>Jeevan | Skin Care</title>
+    <!-- main css -->
+    <link rel ="stylesheet" href = "mail.css">
+    
+
+    <!-- google font css -->
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+<!-- The navigation panel -->
+<nav id="navbar">
+    <div id="logo">
+        <img src="../imgNew/logo1.png" alt="Not found">
+    </div>
+    <ul>
+      <li><a href = "skin-care.html" >Skin Care</a></li>
+	    <li><a href = "hair-care.html">Hair Care</a></li>
+	    <li><a href = "pain-relief.html">Pain relief</a></li>
+        <li><a href = "cough&cold.html">Cough&Cold</a></li>
+        <li><a href = "diabetes.html">Diabetes</a></li>
+        <li><a href = "heart-care.html">Heart Care</a></li>
+
+      <li class = "logout"><a href = "./logout.php">LOGOUT <i class="fa fa-sign-out"></i></a></li>
+
+    </ul>
+    <div class="burger">
+      <div id="line 1"></div>
+      <div id="line2"></div>
+      <div id="line3"></div>
+      
+    </div>
+
+    
+  
+    <script src="./responsiveNavBar.js" type="text/javascipt"></script>
+</nav>
+
+<!-- <script>
+  function navSlide() {
+
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.navbar ul');
+    const navLinks = document.querySelectorAll('.navbar ul li')
+    
+    burger.addEventListener('click', () =>{
+        //toggle nav
+        nav.classList.toggle('nav-active');
+
+        //animate links
+        navLinks.forEach((link ,index) => {
+            if (link.style.animation){
+                link.style.animation = ' ';
+            } else{
+            link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 5 + 1.5}s';
+            }
+        });
+
+        //burger animation
+        burger.classList.toggle('toggle');
+    });
+
+  }
+
+  navSlide();
+  console.log("tushar nav bar");
+
+</script> -->
+
+
+
+
+
+
+<!-- main body starts -->
+    <!-- Start Contact Section -->
+ <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="mcontent" style="max-width:600px">
+      <h4 class="mcenter"><b>Confirm Order</b></h4>
+  
+      
+      <!-- URL for thank you page on form submit -->
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+      onload="if(submitted) {window.location= 'skin-care.html';}"></iframe> 
+      
+      <!-- Update the Google forms URL in action-->
+      
+      <div class="formbar">
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScIWIZgY2oTU9g6S7acPewQnYhFq_AxcYLZ96ANHk9psP-dUg/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+  
+       
+        <div class="msection">
+          <label>Patient Name</label><br>
+          <input class="minput-mborder" type="text" placeholder="Patient Name" id="Patient Name" required name="entry.387057772">
+        </div>
+
+        <div class="msection">
+          <label>Mobile Number</label><br>
+          <input class="minput-mborder" type="text" placeholder="Mobile Number" id="Patient Age" required name="entry.1733744794">
+        </div> 
+        
+        <div class="msection">
+          <label>E-mail Address</label><br>
+          <input class="minput-mborder" type="text" placeholder="E-mail Address" id="E-mail Address" required name="entry.667531071">
+        </div>
+        <div class="msection">
+        <label>Delivery location</label><br>
+          <input class="minput-mborder" type="text" placeholder="Delivery Location" id="Mobile Number" required name="entry.960033134">
+        </div>
+  
+        <div class="msection">
+          <button class="mclass" type="submit" ><a href="../homepage.html" class="anchor" >Place Order</a></button><br>
+          <span class="belowline">*You will recieve a mail of confirmation </span>
+        </div>
+      </form>
+      </div>
+    
+  </div>
+  </div>
+  
+  <!-- End Contact Section --><!-- footer starts -->
+  <div class="clearfix">
+  
+  
+    <footer class="footer-distributed">
+  
+        <div class="footer-left">
+          <img src="../imgOld/logo.png">
+          <h3>About<span>jeevan</span></h3>
+  
+          <p class="footer-links">
+              <a href = "./homepage.html">Home</a>
+              |
+              <a href="#">Health Blog</a>
+              |
+              <a href = "./AboutJeevan.html">About</a>
+              |
+              <a href = "./ContactUs.html">Contact</a>
+          </p>
+  
+          <p class="footer-company-name">© 2021 Jeevan Pvt. Ltd.</p>
+        </div>
+  
+        <div class="footer-center">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                  <p><span>Indian institute of Technology</span>
+                 Roorkee - 400710</p>
+            </div>
+  
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>+91 9400000085</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:iitrhackathon@gmail.com">iitrhackathon@gmail.com</a></p>
+            </div>
+        </div>
+  
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the Service</span>
+                <span id="service_barf">Tired of long waiting at doctors' place? Use&nbspour&nbspservices&nbsp: </span>
+                </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+  </div>
+  
+  
+  
+  
+  
+</body>
+
+<script type="text/javascript">var submitted=false;</script>
+    
+<script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+            return true;
+          }
+        }
+        </script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

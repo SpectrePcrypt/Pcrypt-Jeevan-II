@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content= "ie=edge">
+    <title>Jeevan | Contact Us</title>
+    <!-- main css -->
+    <link rel ="stylesheet" href = "homepage.css">
+    <link rel ="stylesheet" href = "./navBar.css">
+
+    <!-- google font css -->
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+<!-- The navigation panel -->
+<nav id="navbar">
+    <div id="logo">
+        <img src="./imgNew/logo1.png" alt="Not found">
+    </div>
+    <ul>
+        <li><a href = "./homepage.html">Home</a></li>
+        <li><a href = "./ContactUs.html" id="now">Contact&nbspUs</a></li>
+        <li><a href = "./AboutJeevan.html">About&nbspJeevan</a></li>
+        <li><a href = "./pharmacy.html">Pharmacy</a></li>
+        <li><a href = "./bmi.html">BMI</a></li>        
+
+        <li class = "logout"><a href = "./logout.php">LOGOUT <i class="fa fa-sign-out"></i></a></li>
+
+    </ul>
+    <div class="burger">
+      <div id="line 1"></div>
+      <div id="line2"></div>
+      <div id="line3"></div>
+      
+    </div>
+  <script src="./responsiveNavBar.js"></script>
+</nav>
+<!-- <script>
+  function navSlide() {
+
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.navbar ul');
+    const navLinks = document.querySelectorAll('.navbar ul li')
+    
+    burger.addEventListener('click', () =>{
+        //toggle nav
+        nav.classList.toggle('nav-active');
+
+        //animate links
+        navLinks.forEach((link ,index) => {
+            if (link.style.animation){
+                link.style.animation = ' ';
+            } else{
+            link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 5 + 1.5}s';
+            }
+        });
+
+        //burger animation
+        burger.classList.toggle('toggle');
+    });
+
+  }
+
+  navSlide();
+  console.log("tushar nav bar");
+
+</script> -->
+
+
+
+
+<!-- the carousel starts here -->
+<section id="showcase">
+
+  <div class="carousel-container carou">
+
+    <i class= "fas fa-arrow-circle-left fa-2x carou" id="prevBtn" ></i>
+    <i class= "fas fa-arrow-circle-right fa-2x carou" id="nextBtn" ></i>
+    <div class="carousel-slide carou">
+
+      <img src="./imgNew/6.jpg" id="lastClone" class="carou"></img>
+
+      <img src="./imgNew/1.jpg" alt="our hospital" class="carou"></img>
+
+      <img src="./imgNew/2.jpg" alt="our hospital" class="carou"></img>
+
+      <img src="./imgNew/3.jpg" alt="our hospital" class="carou"></img>
+
+      <img src="./imgNew/4.jpg" alt="our hospital" class="carou"></img>
+
+      <img src="./imgNew/5.jpg" alt="our hospital" class="carou"></img>
+
+      <img src="./imgNew/6.jpg" alt="our hospital" class="carou"></img>
+
+      <img src="./imgNew/1.jpg"  id= "firstClone" class="carou"></img>
+    </div>
+
+  </div>
+
+  <script src = "./homepage.js"></script>
+</section>
+<div id="taglinebox"><h1 id="tagline">THE&nbspBEST&nbspCARE ONE&nbspCAN&nbspGET!!</h1></div>
+
+<!-- Add main body here for contact us.... -->
+
+
+
+
+
+
+
+
+
+<!-- footer starts -->
+<div class="clearfix">
+
+
+    <footer class="footer-distributed">
+  
+        <div class="footer-left">
+          <img src="./imgOld/logo.png">
+          <h3>About<span>jeevan</span></h3>
+  
+          <p class="footer-links">
+              <a href = "./homepage.html">Home</a>
+              |
+              <a href="https://www.msn.com/en-sg/health">Health Blog</a>
+              |
+              <a href = "./AboutJeevan.html">About</a>
+              |
+              <a href = "./ContactUs.html">Contact</a>
+          </p>
+  
+          <p class="footer-company-name">© 2021 Jeevan Pvt. Ltd.</p>
+        </div>
+  
+        <div class="footer-center">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                  <p><span>Indian institute of Technology</span>
+                 Roorkee - 400710</p>
+            </div>
+  
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>+91 9400000085</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:iitrhackathon@gmail.com">iitrhackathon@gmail.com</a></p>
+            </div>
+        </div>
+  
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the Service</span>
+                <span id="service_barf">Tired of long waiting at doctors' place? Use&nbspour&nbspservices&nbsp: </span>
+                </p>
+            <div class="footer-icons">
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+  </div>
+  
+  
+  
+  </body>
+  </html>
+  

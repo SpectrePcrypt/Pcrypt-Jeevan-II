@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content= "ie=edge">
+    <title>Jeevan | DIABETES</title>
+    <!-- main css -->
+    <link rel ="stylesheet" href = "diabetes.css">
+    <link rel ="stylesheet" href = "../navBar.css">
+
+    <!-- google font css -->
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+<!-- The navigation panel -->
+<nav id="navbar">
+    <div id="logo">
+        <img src="../imgNew/logo1.png" alt="Not found">
+    </div>
+    <ul><li><a href = "../homepage.html" >Home</a></li>
+        <li><a href = "skin-care.html">Skin Care</a></li>
+	    <li><a href = "hair-care.html">Hair Care</a></li>
+	    <li><a href = "pain-relief.html">Pain relief</a></li>
+        <li><a href = "cough_cold.html">Cough&Cold</a></li>
+        <li><a href = "diabetes.html" id="now">Diabetes</a></li>
+        <li><a href = "heart-care.html">Heart Care</a></li>
+
+
+      <li class = "logout"><a href = "./logout.php">LOGOUT <i class="fa fa-sign-out"></i></a></li>
+
+    </ul>
+    <div class="burger">
+      <div id="line 1"></div>
+      <div id="line2"></div>
+      <div id="line3"></div>
+      
+    </div>
+
+    
+  
+    <script src="./responsiveNavBar.js" type="text/javascipt"></script>
+</nav>
+
+<!-- <script>
+  function navSlide() {
+
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.navbar ul');
+    const navLinks = document.querySelectorAll('.navbar ul li')
+    
+    burger.addEventListener('click', () =>{
+        //toggle nav
+        nav.classList.toggle('nav-active');
+
+        //animate links
+        navLinks.forEach((link ,index) => {
+            if (link.style.animation){
+                link.style.animation = ' ';
+            } else{
+            link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 5 + 1.5}s';
+            }
+        });
+
+        //burger animation
+        burger.classList.toggle('toggle');
+    });
+
+  }
+
+  navSlide();
+  console.log("tushar nav bar");
+
+</script> -->
+
+
+
+
+
+
+<!-- main body starts -->
+<div class ="departments">
+    <h1 class="heading">DIABETES</h1>
+    <div class="gallery">
+      <a  href="#">
+        <img  src="dia1.jpg" alt="physician" height="250px" width="300px">
+        <div class="desc">Drdorest-40 &nbsp&nbsp&nbsp <span class="price">100 Rs.</span>
+            <br><br>
+            <span id="buynow"><a href ="mail.html"  >Click to Buy Now!</a></span>
+        </div>
+        </a>
+    </div>
+  
+    <div class="gallery">
+      <a  href="#">
+        <img  src="dia2.jpg" alt="dermatology" height="250px" width="300px">
+        <div class="desc">Diastrive &nbsp&nbsp&nbsp <span class="price">100 Rs.</span>
+         <br><br>
+            <span id="buynow"><a href ="mail.html"  >Click to Buy Now!</a></span>
+        </div>
+      </a>
+    </div>
+  
+    <div class="gallery">
+      <a  href="#">
+        <img src="dia3.jpg" alt="dentist" height="250px" 
+        width="300px">
+        <div class="desc">Vasant Kusumakar Ras(100tab) &nbsp&nbsp&nbsp <span class="price">100 Rs.</span>
+         <br><br>
+            <span id="buynow"><a href ="mail.html"  >Click to Buy Now!</a></span>
+        </div>
+      </a>
+    </div>
+  
+    <div class="gallery">
+      <a  href="#">
+        <img src="dia4.jpg" alt="gynecology" height="250px" width="300px" >
+        <div class="desc">Diabetene(500ml) &nbsp&nbsp&nbsp <span class="price">100 Rs.</span>
+         <br><br>
+            <span id="buynow"><a href ="mail.html"  >Click to Buy Now!</a></span>
+        </div>
+      </a>
+    </div>
+  
+    <div class="gallery">
+      <a  href="#">
+        <img src="dia5.jpg" alt="cardiologist" height="250px" width="300px">
+        <div class="desc"> Glucometer(Sejoy) &nbsp&nbsp&nbsp <span id="bynow"><span class="price">100 Rs.</span>
+         <br><br>
+            <span id="bynow"><a href ="mail.html"  >Click to Buy Now!</a></span>
+        </div>
+      </a>
+    </div>
+  
+    
+  
+  </div>
+  
+  
+  
+  <!-- footer starts -->
+  <div class="clearfix">
+  
+  
+    <footer class="footer-distributed">
+  
+        <div class="footer-left">
+          <img src="../imgOld/logo.png">
+          <h3>About<span>jeevan</span></h3>
+  
+          <p class="footer-links">
+              <a href = "./homepage.html">Home</a>
+              |
+              <a href="#">Health Blog</a>
+              |
+              <a href = "./AboutJeevan.html">About</a>
+              |
+              <a href = "./ContactUs.html">Contact</a>
+          </p>
+  
+          <p class="footer-company-name">© 2021 Jeevan Pvt. Ltd.</p>
+        </div>
+  
+        <div class="footer-center">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                  <p><span>Indian institute of Technology</span>
+                 Roorkee - 400710</p>
+            </div>
+  
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>+91 9400000085</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:iitrhackathon@gmail.com">iitrhackathon@gmail.com</a></p>
+            </div>
+        </div>
+  
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the Service</span>
+                <span id="service_barf">Tired of long waiting at doctors' place? Use&nbspour&nbspservices&nbsp: </span>
+                </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+  </div>
+  
+  
+  
+  
+  </body>
+  </html>
